@@ -4,7 +4,7 @@ import { Card, Button } from 'react-bootstrap';
 import useSWR from "swr"
 import Link from 'next/link';
 import { useAtom } from 'jotai';
-import { favouritesAtom } from '@/pages/store';
+import { favouritesAtom } from '@/store';
 import { useState } from 'react';
 import { addToFavourites } from '@/lib/userData';
 import { removeFromFavourites } from '@/lib/userData';
