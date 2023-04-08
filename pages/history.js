@@ -1,5 +1,5 @@
 import { useAtom } from "jotai";
-import { searchHistoryAtom } from "./store";
+import { searchHistoryAtom } from "@/store";
 import { useRouter } from "next/router";
 import styles from '@/styles/History.module.css';
 import { Col, Row, Pagination } from 'react-bootstrap';
