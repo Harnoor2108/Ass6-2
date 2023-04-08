@@ -1,5 +1,5 @@
 import { useAtom } from "jotai";
-import { favouritesAtom} from "./store";
+import { favouritesAtom} from "../store";
 import {useState, useEffect} from 'react';
 import { useRouter } from "next/router";
 import { Col, Row, Pagination } from 'react-bootstrap';
