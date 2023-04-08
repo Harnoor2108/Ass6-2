@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { addToHistory } from "@/lib/userData";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import { useAtom } from "jotai";
-import { searchHistoryAtom } from "./store";
+import { searchHistoryAtom } from "@/store";
 
 export default function AdvancedSearch() {
 
