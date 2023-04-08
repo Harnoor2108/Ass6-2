@@ -8,7 +8,7 @@ import { Form, Button } from 'react-bootstrap';
 import Link from "next/link"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useAtom } from "jotai";
-import { searchHistoryAtom } from "@/store";
+import { searchHistoryAtom } from "../store";
 import { addToHistory } from '@/lib/userData';
 import { useRouter } from 'next/router';
 import { readToken } from '@/lib/authenticate';
@@ -54,9 +54,10 @@ function logout() {
         <Link href="/" passHref legacyBehavior>
                                 <Nav.Link onClick={()=>setIsExpanded(false)} active={router.pathname === "/"}>Home</Nav.Link>
                             </Link>
-        <Link href="/search" passHref legacyBehavior>
+                            {token && (
+                            <Link href="/search" passHref legacyBehavior>
                         <Nav.Link onClick={()=>setIsExpanded(false)} active={router.pathname === "/search"}>Advance Search</Nav.Link>
-        </Link>
+        </Link>)}
             </Nav>
             {token && (
             <form className="d-flex" onSubmit={handleSubmit}>
