@@ -4,8 +4,8 @@ import { authenticateUser } from "../lib/authenticate";
 import { useRouter } from "next/router";
 
 import { useAtom } from "jotai";
-import { favouritesAtom } from "./store";
-import { searchHistoryAtom } from "./store";
+import { favouritesAtom } from "@/store";
+import { searchHistoryAtom } from "@/store";
 
 import { getFavourites, getHistory } from "../lib/userData";
 
