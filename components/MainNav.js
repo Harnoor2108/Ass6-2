@@ -8,7 +8,7 @@ import { Form, Button } from 'react-bootstrap';
 import Link from "next/link"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useAtom } from "jotai";
-import { searchHistoryAtom } from "../pages/store";
+import { searchHistoryAtom } from "@/store";
 import { addToHistory } from '@/lib/userData';
 import { useRouter } from 'next/router';
 import { readToken } from '@/lib/authenticate';
