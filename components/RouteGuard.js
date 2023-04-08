@@ -2,7 +2,7 @@ import { isAuthenticated } from '../lib/authenticate';
 import { useRouter } from 'next/router';
 import {useState, useEffect} from 'react';
 import { useAtom } from "jotai";
-import { searchHistoryAtom, favouritesAtom } from "../pages/store";
+import { searchHistoryAtom, favouritesAtom } from "@/store";
 import { getFavourites, getHistory } from "../lib/userData";
 
 
